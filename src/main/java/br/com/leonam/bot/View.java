@@ -20,7 +20,7 @@ public class View {
             bot.login(user.getText(), senha.getPassword().toString());
             bot.verTodosOsStories();
         }catch (Exception e){
-            JOptionPane.showMessageDialog(null,"Algo aconteceu de errado","Erro",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null,e.getMessage());
         }
     }
 

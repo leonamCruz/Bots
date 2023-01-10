@@ -35,18 +35,14 @@ public class Bot {
         webDriver.findElement(By.xpath(Palavra.AGORA_NAO)).click();
     }
 
-    public void verTodosOsStories() throws InterruptedException {
+    public void verTodosOsStories() throws Exception {
         webDriver.findElement(By.xpath(Palavra.XPATH_STORIE_UM)).click();
-        try {
-            while (true) {
-                actions = new Actions(webDriver);
-                actions.sendKeys(Keys.ARROW_RIGHT);
-                actions.build().perform();
-                Thread.sleep(random.nextInt(1001, 4568));
-                webDriver.findElement(By.xpath(Palavra.TELA_STORIES));
-            }
-        }catch (Exception exception){
-            System.exit(0);
+        while (true) {
+            actions = new Actions(webDriver);
+            actions.sendKeys(Keys.ARROW_RIGHT);
+            actions.build().perform();
+            Thread.sleep(random.nextInt(1001, 5500));
+            webDriver.findElement(By.xpath(Palavra.TELA_STORIES));
         }
     }
 }

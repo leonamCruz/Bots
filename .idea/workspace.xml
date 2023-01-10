@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a1d09b-6658-4999-a656-41520ba1ad26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/View.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/View.java" afterDir="false" />
+    <list default="true" id="62a1d09b-6658-4999-a656-41520ba1ad26" name="Changes" comment="att View">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/Palavra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/Palavra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/UtilLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/leonam/bot/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "409",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
@@ -165,8 +164,23 @@
       <updated>1672178058493</updated>
       <workItem from="1672178059066" duration="12212000" />
       <workItem from="1672323248220" duration="1072000" />
-      <workItem from="1673364942683" duration="2128000" />
+      <workItem from="1673364942683" duration="2700000" />
     </task>
+    <task id="LOCAL-00001" summary="att View">
+      <created>1673367156673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673367156673</updated>
+    </task>
+    <task id="LOCAL-00002" summary="att View">
+      <created>1673367210530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673367210530</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,5 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="att View" />
+    <option name="LAST_COMMIT_MESSAGE" value="att View" />
   </component>
 </project>
