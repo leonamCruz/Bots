@@ -9,25 +9,25 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.Random;
 
-public class UtilLogin {
+public class Bot {
     private final WebDriver webDriver;
     private Actions actions;
     private final Random random;
 
-    private UtilLogin() {
+    public Bot() {
         System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\driver\\chromedriver.exe");
         webDriver = new ChromeDriver();
         actions = new Actions(webDriver);
         random = new Random();
     }
 
-    public void login() throws InterruptedException {
+    public void login(String login, String senha) throws InterruptedException {
         webDriver.get(Palavra.SITE_INSTAGRAM);
         Thread.sleep(1500);
         webDriver.findElement(By.xpath(Palavra.XPATH_USERNAME)).click();
-        actions.sendKeys(Palavra.USER);
+        actions.sendKeys(login);
         actions.sendKeys(Keys.TAB);
-        actions.sendKeys(Palavra.PASSWORD);
+        actions.sendKeys(senha);
         actions.sendKeys(Keys.ENTER);
         actions.build().perform();
         Thread.sleep(3500);
@@ -46,17 +46,8 @@ public class UtilLogin {
                 Thread.sleep(random.nextInt(1001, 4568));
                 webDriver.findElement(By.xpath(Palavra.TELA_STORIES));
             }
-        }catch (NoSuchElementException e){
-            System.out.println("Não achei");
-            System.out.println("Vou finalizar hehehe");
+        }catch (Exception exception){
             System.exit(0);
         }
     }
-
-    public static void main(String[] args) throws InterruptedException {
-        var bot = new UtilLogin();
-        bot.login();
-        bot.verTodosOsStories();
-    }
-
 }
